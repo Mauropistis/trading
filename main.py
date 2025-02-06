@@ -53,7 +53,7 @@ class AITradingStrategy(bt.Strategy):
         prediction = model_lstm.predict(X_test)[0][0]
 
         # Simulazione di una news finanziaria
-        news = "La Federal Reserve ha annunciato un aumento dei tassi di interesse."
+        news = "La Federal Reserve ha annunciato un aumento dei tassi di interesse."#todo: fetch real news
         sentiment = analyze_sentiment(news)
 
         # Logica di trading: RSI + MACD + AI + Sentiment

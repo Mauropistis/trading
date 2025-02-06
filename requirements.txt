@@ -1,6 +1,6 @@
 pandas
 numpy
-matplotlib
+matplotlib>=3.5.0
 backtrader
 ib_insync
 plaidml-keras
