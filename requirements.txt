@@ -9,5 +9,3 @@ keras
 openai
 tensorflow
 scipy
-logging
-datetime
