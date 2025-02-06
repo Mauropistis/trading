@@ -1,0 +1,4 @@
+plaidml-keras==0.7.0
+plaidbench==0.7.0
+keras==2.2.4
+

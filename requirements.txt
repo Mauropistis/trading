@@ -1,4 +1,13 @@
-yfinance
 pandas
 numpy
 matplotlib
+backtrader
+ib_insync
+plaidml-keras
+plaidbench
+keras
+openai
+tensorflow
+scipy
+logging
+datetime

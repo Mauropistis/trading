@@ -1,15 +1,20 @@
+import collections
+import collections.abc
+if not hasattr(collections, 'Iterable'):
+    collections.Iterable = collections.abc.Iterable
+
 import logging
 import pandas as pd
 import numpy as np
 from datetime import datetime
 import backtrader as bt
 from ib_insync import IB, Stock, util
-try:
-    import tensorflow as tf
-    from tensorflow.keras.models import load_model
-except ImportError:
-    import keras
-    from keras.models import load_model
+
+# Imposta PlaidML per usare la GPU AMD
+import plaidml.keras
+plaidml.keras.install_backend()
+
+from keras.models import load_model
 import openai
 
 from src.indicators import fetch_real_data, clean_data, compute_indicators, compute_stochastic_oscillator, compute_mfi, rank_assets
