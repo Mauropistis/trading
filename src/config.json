@@ -1,0 +1,7 @@
+{
+    "start_date": "2023-01-01",
+    "end_date": "2024-01-01",
+    "order_quantity": 10,
+    "stoch_k_threshold": 20,
+    "mfi_threshold": 20
+}

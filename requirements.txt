@@ -9,3 +9,5 @@ keras
 openai
 tensorflow
 scipy
+stable-baselines3
+gym==0.26.2
